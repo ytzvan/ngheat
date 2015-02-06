@@ -14,6 +14,13 @@ angular.module('ngheatApp')
 
 
 angular.module('ngheatApp', ['uiGmapgoogle-maps'])
-.controller('MapCtrl', function ($scope) {
-  	 $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
-  });
+    .controller('mainCtrl', function ($scope) {
+    $scope.map = {
+        center: {
+            latitude: 45,
+            longitude: -95
+        },
+        zoom: 3,
+        bounds: {}
+    };
+ });   
